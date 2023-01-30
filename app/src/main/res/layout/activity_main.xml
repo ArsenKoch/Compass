@@ -11,7 +11,7 @@
         android:id="@+id/tvDegree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/compass"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.077" />
 
     <ImageView
-        android:id="@+id/imDinamic"
+        android:id="@+id/imDynamic"
         android:layout_width="350dp"
         android:layout_height="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,16 +30,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDegree"
         app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/dinamic_compass" />
+        app:srcCompat="@drawable/dynamic_compass"
+        android:contentDescription="@string/wheel_with_degrees" />
 
     <ImageView
         android:id="@+id/imStatic"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imDinamic"
-        app:layout_constraintEnd_toEndOf="@+id/imDinamic"
-        app:layout_constraintStart_toStartOf="@+id/imDinamic"
-        app:layout_constraintTop_toTopOf="@+id/imDinamic"
-        app:srcCompat="@drawable/img" />
+        app:layout_constraintBottom_toBottomOf="@+id/imDynamic"
+        app:layout_constraintEnd_toEndOf="@+id/imDynamic"
+        app:layout_constraintStart_toStartOf="@+id/imDynamic"
+        app:layout_constraintTop_toTopOf="@+id/imDynamic"
+        app:srcCompat="@drawable/img"
+        android:contentDescription="@string/rotating_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

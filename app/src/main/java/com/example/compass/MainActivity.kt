@@ -52,6 +52,6 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         rotationAnim.duration = 210
         rotationAnim.fillAfter = true
         currentDegree = -degree
-        imDinamic.startAnimation(rotationAnim)
+        imDynamic.startAnimation(rotationAnim)
     }
 }
